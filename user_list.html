@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h2 class="heading"><i class="fas fa-user-friends"></i> User List</h2>
+    <div class="button">
+        <a href="./user_list.html">My porfile</a>
+        <a href="./login_user.html" onclick="logout()">Log out</a>
+    </div>
+    <table class="myTable" id="showdata">
+        <tr class="header">                                                                                                                                                                                                                                                           
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+    <script src="./javascript/user_list.js">
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <form onsubmit="dataSearch()">
+
+        <div class="align-center">
+            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+            <h1>Login Form</h1>
+            <h5>Please Enter Your Email or Password</h5>
+        </div>
+
+        <div class="form">
+            <label for="uname"><b>Username:</b></label>
+            <input type="text" id="uname" placeholder="Enter Email-or-Username" name="uname" required>
+
+            <label for="psw"><b>Password:</b></label>
+            <input type="password" id="psw" placeholder="Enter Password" name="psw" required><br><br>
+            <div style="text-align: center;">
+                <button type="submit">Login</z>
+            </div>
+            <p class="footer">you don't have account? <a class="a_fontsize" href="./new_user.html">Register</a>.</p>
+        </div>
+
+        <script src="./javascript/login_user.js">
+
+        </script>
+</body>
+</html>

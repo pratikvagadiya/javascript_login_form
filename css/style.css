@@ -1,0 +1,81 @@
+body {
+    width: 50%;
+    margin: auto;
+    color: black;
+    padding: 10px;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 15px 2px;
+}
+.align-center{
+    text-align: center;
+}
+
+.form{
+    text-align: center;
+    margin: auto;
+  
+}
+.align-center img{
+    width: 150px;
+    text-align: center;
+    border-radius: 50%;
+    
+}
+.form input{
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    background-color: #f1f1f1;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.form label{
+    margin: 10px;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    margin: auto;
+    text-align: left;
+    margin-left: 12%;
+    
+    
+}
+.admin-role{
+    width: 100%;
+    margin-left: 12%;
+}
+.admin-role select{
+    padding: 5px;
+    cursor: pointer;
+}
+.form button{
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+}
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+}
+.form select{
+    padding: 5px;
+    width: 10%;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+.form a{
+    color: blue;
+    text-decoration: none;
+}
+.txt_err{
+    font-size: 15px;
+    color: red;
+}

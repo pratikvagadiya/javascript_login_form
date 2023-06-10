@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form onsubmit="saveEdit(event)">
+        <div class="align-center">
+            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+            <h1>Creat or Edit Form</h1>
+        </div>
+
+        <div class="form">
+            <label for="fname"><b>First Name:</b></label>
+            <input type="text" placeholder="First Name" name="fname" id="fname">
+
+            <label for="lname"><b>Last Name:</b></label>
+            <input type="text" placeholder="Last Name" name="lname" id="lname">
+      
+
+            <label><b>Email:</b></label>    
+            <input name="email" id="email" disabled>
+
+            <label for="psw"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw">
+            <br><br>
+
+            <div style="text-align: center;">
+                <button type="submit" class="registerbtn">Save Change</button>
+            </div>
+
+        </div>
+    </form>
+
+    <script src="./javascript/edit_page.js">
+
+    </script>
+</body>
+
+</html>

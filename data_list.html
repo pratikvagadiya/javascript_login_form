@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Profile</title>
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div>
+        <h2 class="heading"><i class="fas fa-users"></i> All User Data</h2>
+        <input type="text" id="myInput" placeholder="Search..">
+    </div>
+    <div>Select Number of Row:
+        <select name="rows_per_page" id="dropdown" onchange="myFunction()">
+            <option value=5 selected>5</option>
+            <option value=10>10</option>
+            <option value=15>15</option>
+            <option value=20>20</option>
+        </select>
+    </div>
+    <div class="button">
+        <a href="./admin_list.html">Admin List</a>
+        <a href="./login_user.html" onclick="logout()">Log out</a>
+    </div>
+    <table class="myTable" id="table">
+        <thead>
+            <tr class="header">
+                <th onclick="sortData({name:'role', key:0})">Role<i class="fas fa-arrow-down"
+                        style="display: none;"></i> <i class="fas fa-arrow-up" style="display: none;"></i></th>
+                <th onclick="sortData({name:'fname', key:1})">First name <i class="fas fa-arrow-down"
+                        style="display: none;"></i> <i class="fas fa-arrow-up" style="display: none;"></i></th>
+                <th onclick="sortData({name:'lname', key:2})">Last name <i class="fas fa-arrow-down"
+                        style="display: none;"></i> <i class="fas fa-arrow-up" style="display: none;"></i></th>
+                <th onclick="sortData({name:'email', key:3})">Email <i class="fas fa-arrow-down"
+                        style="display: none;"></i> <i class="fas fa-arrow-up" style="display: none;"></i></th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody class="header" id="table_heading">
+        </tbody>
+    </table>
+    <div class="next">
+
+        <i class="prev fa-solid fa-angle-left" id="prev" onclick="arrowButton('previes')"></i>
+
+        <div id="pagination-wrapper" class="pagenumberr">
+
+        </div>
+
+        <i class=" fa-solid fa-angle-right" id="next" onclick="arrowButton('next')"></i>
+
+    </div>
+
+    <script src="./javascript/data_list.js">
+
+    </script>
+
+</body>
+
+</html>

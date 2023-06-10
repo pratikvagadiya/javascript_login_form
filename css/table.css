@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  #myInput {
+    
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  .myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  
+  .myTable th, .myTable td {
+    text-align: left;
+    padding: 5px;
+  }
+  
+  .myTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .myTable tr.header, .myTable tr:hover {
+    background-color: #f1f1f1;
+  }
+  .heading{
+      text-align: center;
+      width: 50%;
+      border-radius: 10px;
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      font-family: sans-serif;
+      border: 2px solid black;
+      padding: 12px;
+      background-color: #ddd;
+  }
+
+ #myInput {
+    width: 30%;
+    float: right;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+  }
+  
+  .myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  .button{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+  }
+  .button a{
+    border: 1px solid black;
+    background-color: rgb(19, 65, 218);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: -1px -1px 0px rgb(0 0 0 / 40%);
+
+  }
+  .edit_size {
+    width: 20%;
+    text-align: center;
+  }
+  .btn_edit {
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    color: white;
+    border-radius: 50px;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.4);
+    padding: 5px 30px;
+    background-color: rgb(112, 194, 112);
+    cursor: pointer;
+    margin: 0px 15px;
+  }
+  .btn_delete {
+    display: inline-block;
+    color: white;
+    background-color: rgb(197, 54, 54);
+    padding: 4px 20px;
+    border-radius: 50px;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+    
+.pagenumberr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagenumberr button {
+  width: 35px;
+  height: 35px;
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.4s;
+  font-size: 18px;
+  border-radius: 50px;
+}
+
+.pagenumberr button:hover {
+  background-color: #ddd;
+  color: white;
+  border-radius: 50px;
+}
+
+.pagenumberr button.active {
+  background-color: #ddd;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 50px;
+  border:  1px solid black;
+}
+#dropdown{
+  padding: 3px;
+  cursor: pointer;
+}
+.next i{
+  width: 35px;
+  /* height: 35px; */
+  text-align: center; 
+  cursor: pointer;
+  margin: 5px;
+  font-size: 18px;
+}
+.next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

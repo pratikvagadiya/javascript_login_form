@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form onsubmit="saveData()">
+        <div class="align-center">
+            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+            <h1>Register</h1>
+            <h5>Please fill in this form to create an account.</h5>
+        </div>
+
+        <div class="admin-role">
+            <label for="role"><b>Select Your Role:</b></label>
+            <select id="role" name="user">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+
+        <div class="form">
+            <label for="fname"><b>First Name:</b></label>
+            <input type="text" placeholder="First Name" name="fname" id="fname">
+            <p id="fname_error" class="txt_err"></p>
+
+            <label for="lname"><b>Last Name:</b></label>
+            <input type="text" placeholder="Last Name" name="lname" id="lname">
+            <p id="lname_error" class="txt_err"></p>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email">
+            <p id="email_error" class="txt_err"></p>
+
+            <label for="psw"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw">
+            <p id="psw_error" class="txt_err"></p>
+            <br><br>
+
+            <div style="text-align: center;">
+                <button type="submit" class="registerbtn">Register</button>
+            </div>
+
+            <p class="footer">Already have an account? <a href="./login_user.html">login</a>.</p>
+        </div>
+    </form>
+
+    <script src="./javascript/new_user.js">
+
+    </script>
+
+
+</body>
+</html>
